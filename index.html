@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>I'm Sorry ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at center, #4b1738, #170817 75%);
+    color: white;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 92%;
+    max-width: 520px;
+    margin: 30px auto;
+    padding: 35px 25px;
+    text-align: center;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 30px;
+
+    box-shadow: 0 0 60px rgba(255,50,120,0.18);
+
+    animation: appear 2s ease;
+}
+
+/* ❤️ PHOTO AREA ❤️ */
+.photo {
+    width: 190px;
+    height: 190px;
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 4px solid rgba(255,150,190,0.8);
+
+    box-shadow:
+        0 0 20px rgba(255,100,160,0.6),
+        0 0 60px rgba(255,50,130,0.3);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* HEART */
+.big-heart {
+    font-size: 60px;
+    animation: heartbeat 1.5s infinite;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 42px;
+    font-weight: normal;
+}
+
+h1 span {
+    color: #ff8db4;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #e9cbd8;
+    margin-bottom: 25px;
+}
+
+.message {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #f8e8ef;
+}
+
+.message strong {
+    color: #ff9fbd;
+}
+
+.sorry {
+    margin: 25px 0;
+    font-size: 30px;
+    color: #ff91b4;
+    font-weight: bold;
+}
+
+.quote {
+    margin: 25px 5px;
+    padding: 20px;
+    border-left: 3px solid #ff719e;
+    border-right: 3px solid #ff719e;
+
+    color: #f6d7e3;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+button {
+    margin-top: 25px;
+    padding: 15px 35px;
+
+    border: none;
+    border-radius: 40px;
+
+    background: linear-gradient(45deg,#ff477e,#ff91b4);
+
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 30px rgba(255,70,120,0.4);
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+#hiddenMessage {
+    display: none;
+    margin-top: 25px;
+
+    color: #ffdce8;
+    font-size: 18px;
+    line-height: 1.8;
+
+    animation: fadeIn 2s ease;
+}
+
+.footer {
+    margin-top: 30px;
+    color: #bd91a3;
+    font-size: 14px;
+}
+
+/* FLOATING HEARTS */
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+
+    font-size: 20px;
+
+    animation: float 8s linear infinite;
+
+    opacity: 0.7;
+
+    pointer-events: none;
+}
+
+/* ANIMATIONS */
+
+@keyframes heartbeat {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <!-- ❤️ PHOTO GOES HERE ❤️ -->
+
+    <div class="photo">
+        <img src="YOUR-PHOTO.jpg" alt="Our Memory">
+    </div>
+
+    <!-- ❤️ PHOTO AREA ENDS HERE -->
+
+
+    <div class="big-heart">❤️</div>
+
+    <h1>I'm <span>Sorry</span></h1>
+
+    <div class="subtitle">
+        From the deepest part of my heart...
+    </div>
+
+
+    <div class="message">
+
+        I know I hurt you.
+
+        <br><br>
+
+        And honestly...
+        <strong>that's something I wish I could take back.</strong>
+
+        <br><br>
+
+        I can't change what happened.
+        I can't erase the words I said
+        or the moments that made you feel hurt.
+
+        <br><br>
+
+        But I can admit that I was wrong.
+
+        <br><br>
+
+        I'm not asking you to forget everything
+        just because I said sorry.
+
+        <br><br>
+
+        I just want you to know that
+        <strong>I truly regret hurting you.</strong>
+
+    </div>
+
+
+    <div class="sorry">
+        I'm Really Sorry ❤️
+    </div>
+
+
+    <div class="quote">
+
+        "If I could turn back time,
+        I would choose your smile
+        over every argument,
+        your happiness over my ego,
+        and your heart over being right."
+
+    </div>
+
+
+    <div class="message">
+
+        You don't have to forgive me immediately.
+
+        <br><br>
+
+        If you need time,
+        I'll understand.
+
+        <br><br>
+
+        If you're angry,
+        I'll understand.
+
+        <br><br>
+
+        I just hope that one day
+        you can look at me again
+        and know that my apology was real.
+
+        <br><br>
+
+        <strong>
+        I don't want to just say sorry.
+        I want to show you that I can do better.
+        </strong>
+
+    </div>
+
+
+    <button onclick="showMessage()">
+        Open My Heart ❤️
+    </button>
+
+
+    <div id="hiddenMessage">
+
+        I may not always find the perfect words...
+
+        <br><br>
+
+        But please believe me when I say:
+
+        <br><br>
+
+        <strong>
+        I'm sorry for hurting you.
+        I'm sorry for making you sad.
+        I'm sorry for the moments I failed you.
+        </strong>
+
+        <br><br>
+
+        You deserve kindness, respect and honesty.
+
+        <br><br>
+
+        And I hope I can earn back your trust
+        through my actions, one day at a time.
+
+        <br><br>
+
+        ❤️ I'm truly sorry. ❤️
+
+    </div>
+
+
+    <div class="footer">
+        Made with a truly sorry heart ❤️
+    </div>
+
+</div>
+
+
+<script>
+
+function showMessage() {
+
+    document.getElementById("hiddenMessage").style.display = "block";
+
+}
+
+
+/* Floating hearts */
+
+setInterval(function() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerHTML =
+        ["❤️","💕","💗","💖"][Math.floor(Math.random()*4)];
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+    heart.style.animationDuration =
+        (Math.random() * 4 + 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function() {
+        heart.remove();
+    }, 9000);
+
+}, 600);
+
+</script>
+
+</body>
+</html>
